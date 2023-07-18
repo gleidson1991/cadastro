@@ -56,8 +56,7 @@ public class AlunoController {
 	@DeleteMapping("delete/{id}")
 	public Aluno deleteById(@PathVariable UUID id) {
 		alunoService.deleteById(id);
-		return (Aluno) ReponseEntity.status(HttpStatus.OK);
-
+		return null;
 	}
 
 }
