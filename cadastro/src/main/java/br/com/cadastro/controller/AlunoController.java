@@ -37,7 +37,7 @@ public class AlunoController {
 		return ResponseEntity.status(HttpStatus.CREATED).body(alunoService.save(aluno));
 	}
     
-    @PutMapping("/editar")
+        @PutMapping("/editar")
 	public ResponseEntity<Aluno> edit(@RequestBody Aluno aluno) {
 		return ResponseEntity.status(HttpStatus.CREATED).body(alunoService.save(aluno));
 	}
